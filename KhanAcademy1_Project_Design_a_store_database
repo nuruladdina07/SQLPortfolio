@@ -1,0 +1,29 @@
+CREATE TABLE bicycles (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  brand TEXT,
+  price INTEGER,
+  stock INTEGER
+);
+
+INSERT INTO bicycles (id, name, brand, price, stock)
+VALUES (1, 'Roadmaster', 'Huffy', 399.99, 10),
+       (2, 'Mountain Bike', 'Giant', 599.99, 5),
+       (3, 'Beach Cruiser', 'Schwinn', 249.99, 15),
+       (4, 'Fixed Gear', 'State Bicycle Co.', 499.99, 8),
+       (5, 'Electric Bike', 'Rad Power Bikes', 1999.99, 2),
+       (6, 'Hybrid Bike', 'Trek', 899.99, 12),
+       (7, 'Folding Bike', 'Dahon', 799.99, 7),
+       (8, 'BMX Bike', 'Mongoose', 399.99, 9),
+       (9, 'Tandem Bike', 'Co-Motion', 1999.99, 1),
+       (10, 'Recumbent Bike', 'Sun', 999.99, 4),
+       (11, 'City Bike', 'Electra', 699.99, 11),
+       (12, 'Cruiser Bike', 'Hollandia', 499.99, 6),
+       (13, 'Kids Bike', 'Diamondback', 299.99, 16),
+       (14, 'Race Bike', 'Cannondale', 1999.99, 3),
+       (15, 'Fat Bike', 'Salsa', 999.99, 5);
+       
+SELECT * FROM bicycles ORDER BY price;
+
+SELECT AVG(price) FROM bicycles;
+       
